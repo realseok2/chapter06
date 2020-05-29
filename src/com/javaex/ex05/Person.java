@@ -41,12 +41,19 @@ public class Person {
 	public void setCompany(String company) {
 		this.company = company;
 	}
+	
+//--------------------------------------------------------------------				showInfo()
+	
+	public void showInfo() {
+		System.out.println(name + "," + hp + "," + company);
+	}
+	
 
 //--------------------------------------------------------------------				toString()
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", hp=" + hp + ", company=" + company + "]";
+		return "Person [name=" + name + ", hp=" + hp + ", company=" + company + "]\n";
 	}
 
 }

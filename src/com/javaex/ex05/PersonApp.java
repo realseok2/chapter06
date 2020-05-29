@@ -41,9 +41,15 @@ public class PersonApp {
 
 		br.close();
 
+//////////////////////////////////////////////////////////////////////////////////////
+
 		OutputStream out = new FileOutputStream("C:\\JavaStudy\\file\\PhoneDB01.txt");
 		OutputStreamWriter ow = new OutputStreamWriter(out, "UTF-8");
 		BufferedWriter bw = new BufferedWriter(ow);
+
+		for (Person p : personList) {
+			bw.write(p.showInfo());
+		}
 
 		String self = "김태석, 010-7117-7350,02-1234-5678";
 		String[] me = self.split(",");
@@ -61,24 +67,6 @@ public class PersonApp {
 
 		bw.close();
 
-//--------------------------------------------------------------------------------------------------------------------------------------------
-
-//		OutputStreamWriter ow = new OutputStreamWriter(System.out);
-//		BufferedWriter bw = new BufferedWriter(ow);
-//
-//		String self = "김태석, 010-7117-7350,02-1234-5678";
-//		String[] me = self.split(",");
-//		String myname = me[0];
-//		String myhp = me[1];
-//		String mycompany = me[2];
-//
-//		System.out.println("Name - " + myname);
-//		System.out.println("Hp - " + myhp);
-//		System.out.println("Company - " + mycompany);
-//
-//		System.out.println("----------------------------------");
-//		
-//		bw.close();
 	}
 
 }

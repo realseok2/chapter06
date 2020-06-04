@@ -1,4 +1,4 @@
-package com.javaex.ex05;
+package com.javaex.ex05_Memo;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

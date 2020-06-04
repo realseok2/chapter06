@@ -1,4 +1,4 @@
-package com.javaex.ex05;
+package com.javaex.ex05_Memo;
 
 public class Person {
 
@@ -47,13 +47,16 @@ public class Person {
 	public void showInfo() {
 		System.out.println(name + "," + hp + "," + company);
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", hp=" + hp + ", company=" + company + "]";
+	}
 	
 
 //--------------------------------------------------------------------				toString()
 
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", hp=" + hp + ", company=" + company + "]\n";
-	}
+	
 
 }
